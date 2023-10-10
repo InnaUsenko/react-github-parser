@@ -35,11 +35,11 @@ class App extends Component {
         <hr />
         {this.state.users.map(el => {
           return (
-            <div style={{ margin: 10 }} key={el.id}>
+            <div style={{ margin: 10, width: 160 }} key={el.id}>
               <a href={el.html_url} target="blank">
                 <img src={el.avatar_url} alt="" width={160} />
               </a>
-              <p>{el.login}</p>
+              <center>{el.login}</center>
             </div>
           );
         })}
